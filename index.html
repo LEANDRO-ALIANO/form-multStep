@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<script src="/js/script.js" defer></script>
+<title>Form Multi Step</title>
+</head>
+<body>
+  <main id="app">
+    <form action="">
+        <div class="stepProgress ">
+            <strong class="active" data-step>Contato</strong>
+            <svg width="8" height="14" viewBox="0 0 8 14" 
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.41663 2L6.41663 7L1.41663 12" 
+                stroke="#323238" 
+                stroke-width="2" 
+                stroke-linecap="square"/>
+                </svg>
+                
+            <strong data-step>Empresa</strong>
+            <svg width="8" height="14" viewBox="0 0 8 14" 
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.41663 2L6.41663 7L1.41663 12" 
+                stroke="#323238" 
+                stroke-width="2" 
+                stroke-linecap="square"/>
+                </svg>
+            <strong data-step>Progresso</strong>
+        </div>
+        <div class="stepForm active ">
+            <div class="inputform">
+                <label for="name">Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome" required>
+                <label for="tel">telefone</label>
+                <input type="text" name="tell" placeholder=" digite seu numero de telefone" required>
+                <label for="mail">E-mail</label>
+                <input type="email" name="mail" placeholder="digite seu E-mail" required>
+            </div>
+            <div class="formBtn">
+                <button type="submit" class="next" data-action="next">proximo</button>
+            </div>
+        </div>
+        <div class="stepForm ">
+            <div class="inputform">
+                <label for="empresa">Nome da empresa</label>
+                <input type="text" name="empresa" placeholder="Qual é o nome da empresa" required>
+                <label for="numeroFuncionarios">Número de funcionarios</label>
+                <input type="text" name="numeroFuncionarios" placeholder=" digite seu numero de colaboradores" required>
+                <label for="sobre">Sobre seu negócio</label>
+                <textarea name="sobre" rows="4" cols="20" placeholder="fale sobre seu negocio" required></textarea >
+            </div>
+            <div class="formBtn">
+                <button type="submit" class="after" data-action="prev">voltar</button>
+                <button type="submit" class="next" data-action="next">proximo</button>
+                
+            </div>
+        </div>
+
+
+        <div class="stepForm ">
+            <div class="inputform">
+              
+                <label for="objective">Objetivos do projeto</label>
+                <textarea name="objective" rows="4" cols="20" placeholder="Descreva quais os objetivos desse projeto" required></textarea>
+            </div>
+            <div class="formBtn">
+                <button type="submit" class="after" data-action="prev">voltar</button>
+                <button type="submit" class="next">Concluido</button>
+                
+            </div>
+        </div>
+    </form>
+
+
+
+    
+    
+  </main>
+</body>
+</html>

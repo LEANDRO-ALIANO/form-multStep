@@ -1,0 +1,131 @@
+
+:root{
+
+    /*product*/
+--purpleMid:#633bbc;
+--purpleLigth:#8257e5;
+
+/*base*/
+--white:#ffffff;
+--gray-100:#e1e1e6;
+--gray-200:#8d8d99;
+--gray-300:#7c7c8a;
+--gray-400:#323238;
+/*feedback*/
+--sucess-color:#1d8841;
+font-size: 62.5%;
+
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+    }
+html,body,input,button,textarea{
+    font-family: 'IBM Plex Sans';
+    font-size: 1.6rem;
+}
+body{
+   
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+form{
+    padding: 3.2rem;
+    border: 1px solid var(--gray-100);
+    border-radius: 0.6rem;
+}
+
+
+.stepProgress{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    border-bottom: 4px solid var(--gray-100);
+    padding-bottom: 3.2rem;
+}
+.stepProgress strong.active{
+ color: var(--purpleMid);
+}
+
+.stepProgress strong.done{
+    color: var(--sucess-color);
+   }
+
+.stepProgress strong{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    color: var(--gray-200);
+}
+
+.stepForm.active{
+    display: block;
+}
+.stepForm{
+    display: none;
+}
+.stepForm .inputform{
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem;
+    
+}
+
+.stepForm .inputform  input{
+    height: 56px;
+    top: 28px;
+    border-radius: 2px;
+    padding: 8px 16px 8px 16px;
+    gap: 10px;
+    color: var(--gray-200);
+    border: solid 1px var(--gray-100);
+}
+.stepForm .inputform  textarea{
+    height: 100px;
+    top: 28px;
+    border-radius: 2px;
+    padding: 8px 16px 8px 16px;
+    gap: 10px;
+    color: var(--gray-200);
+    border: solid 1px var(--gray-100);
+}
+.stepForm .formBtn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5.6rem;
+    gap: 32px;
+    padding: 0;
+}
+.stepForm .formBtn button.next{
+    text-align: center;
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+    background: var(--purpleMid);
+    width: 15.8rem;
+    height: 5.6rem;
+    left: 37.0rem;
+    border-radius: 0.6rem;
+    padding: 16px 32px 16px 32px;
+    gap: 8px;
+    cursor: pointer;
+}
+.stepForm .formBtn button.after{
+
+    color: var(--purpleMid);
+    background: var(--white);
+    width: 15.8rem;
+    height: 5.6rem;
+    left: 37.0rem;
+    border-radius: 0.6rem;
+    padding: 16px 32px 16px 32px;
+    gap: 8px;
+    border:1px solid var(--purpleLigth);
+    cursor: pointer;
+}
+
